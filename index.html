@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+    <title>Kiểm tra tam giác</title>
+</head>
+<body style="background-color: #0a77a1;">
+    <div class="container">
+        <h1 style="color: white; font-family: monospace;">Kiểm tra tam giác là tam giác gì?</h1>
+        <div class="description">
+            <ul class="list">
+                <h2>Mô tả bài toán: </h2>
+                <li class="item">
+                    Nếu các cạnh của tam giác thoả mãn điều kiện sau thì được cho là một tam giác<br>
+                </li>
+                <span style="color: red; margin-right: 20px;"> a < b + c và b < a + c và c < a + b</span>
+                <li class="item">
+                    Nếu các cạnh của tam giác thoả mãn điều kiện sau thì được cho là một tam giác vuông<br>
+                </li>
+                <span style="color: red; margin-right: 20px;">  a*a == b*b + c*c hoặc b*b == a*a + c*c hoặc c*c == a*a + b*b</span>
+                <li class="item">
+                    Nếu các cạnh của tam giác thoả mãn điều kiện sau thì được cho là một tam giác đều<br>
+                </li>
+                <span style="color: red; margin-right: 20px;">  a == b và b == c</span>
+                <li class="item">
+                    Nếu các cạnh của tam giác thoả mãn điều kiện sau thì được cho là một tam giác cân<br>
+                </li>
+                <span style="color: red; margin-right: 20px;">  a == b hoặc b == c hoặc a == c</span>
+                <li class="item">
+                    Nếu các cạnh của tam giác thoả mãn điều kiện sau thì được cho là một tam giác tù<br>
+                </li>
+                <span style="color: red; margin-right: 20px;">  a*a > b*b + c*c hoặc b*b > a*a + c*c hoặc c*c > a*a + b*b</span>
+                <li class="item">
+                    Các trường hợp còn lại là: <br>
+                </li>
+                <span style="color: red; margin-right: 20px;">Tam giác nhọn</span>
+            </ul>
+        </div>
+        <form action="" class="checkTrilogy">
+            <label class="labelOfInput" for="">Nhập điểm a: </label>
+            <input id="Value_A" type="number"><br>
+            <label class="labelOfInput" for="">Nhập điểm b: </label>
+            <input id="Value_B" type="number"><br>
+            <label class="checkTrilogy__diemC" for="">Nhập điểm c: </label>
+            <input id="Value_C" type="number"><br>
+        </form>
+        <button id="smb_btn" style="margin-top: 10px;" onclick="checkTrilogy()">Gửi giá trị</button>
+        <p id="printAllValue"></p>
+        <p><b style="font-size: 20px;" id="result"></b></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
